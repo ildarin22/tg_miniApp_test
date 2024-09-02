@@ -35,10 +35,11 @@ const gameReducer = (state, action) => {
       if (state.deck[first].color === state.deck[second].color) {
         const newMatched = [...state.matched, state.deck[first].color];
         const isGameOver = newMatched.length === state.deck.length / 2;
+       
         return {
           ...state,
           matched: newMatched,
-          score: isGameOver ? state.score + 1 : state.score,
+          score: !isGameOver ? state.score + 1 : state.score,
           flipped: [],
           pendingReset: false,
           gameOver: isGameOver, 
