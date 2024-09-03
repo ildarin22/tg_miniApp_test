@@ -1,0 +1,30 @@
+.navmenu {
+    background: #000;
+    padding: 1rem 3rem;
+    border-top: 1px solid #111;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    text-align: center;
+    cursor: pointer;
+  }
+
+.active svg {
+    fill: #fff;
+  }
+
+.active p {
+    color: #fff;
+  }
+  p {
+    color: #857f7f;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
